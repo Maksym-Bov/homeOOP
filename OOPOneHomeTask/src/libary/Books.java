@@ -1,10 +1,16 @@
-package libary.books;
+package libary;
 
-public class Book {
-
+public class Books {
     private  String nameBook;
     private  String typeBook;
     private  String authorBook;
+
+
+    public Books(String nameBook, String typeBook, String authorBook) {
+        this.nameBook = nameBook;
+        this.typeBook = typeBook;
+        this.authorBook = authorBook;
+    }
 
     public String getNameBook() {
         return nameBook;
