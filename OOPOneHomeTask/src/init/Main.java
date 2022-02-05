@@ -7,13 +7,19 @@ public class Main {
 
     public static void main (String[] args){
 
-        Reader reader = new Reader("Олег","Петров","Адамович",1,"Техник","",3809855);
-        Books books1 = new Books("Ring","Приключения","Толкин");
-        Books books2 = new Books("Help","Энциклопедия","Барабаров");
-        Books books3 = new Books("Dog","Энциклопедия","Альт");
-        Books books4 = new Books("English","Словарь","Борн");
-        Books books5 = new Books("Coin","Приключения","Колт");
-        Books books6 = new Books("Bit","Словарь","Рик");
+        Reader reader = new Reader();
+
+        Books books1 = new Books("Ring","Толкин");
+        Books books3 = new Books("Dog","Альт");
+        Books books4 = new Books("English","Борн");
+        System.out.println("Take books");
+        reader.takeBook(5);
+        reader.takeBook("Ring","Dog","English");
+        reader.takeBook(books1,books3,books4);
+        System.out.println("Return books");
+        reader.returnBook(1);
+        reader.returnBook("Ring","Dog","English");
+        reader.returnBook(books1,books3,books4);
 
     }
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OOPOneHomeTask/OOPOneHomeTask.iml" filepath="$PROJECT_DIR$/OOPOneHomeTask/OOPOneHomeTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPTwoHomeTask/OOPTwoHomeTask.iml" filepath="$PROJECT_DIR$/OOPTwoHomeTask/OOPTwoHomeTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/homeOOP.iml" filepath="$PROJECT_DIR$/.idea/homeOOP.iml" />
     </modules>
   </component>
