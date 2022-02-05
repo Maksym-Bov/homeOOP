@@ -2,9 +2,6 @@ package univer;
 
 public class Aspirant extends  Student {
 
-    private static final String firstName = "";
-    private static final String lastName = "";
-    private static final double averageMark = 0;
     private String scientificWork;
     public  Aspirant(){}
 
