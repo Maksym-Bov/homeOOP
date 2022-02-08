@@ -2,7 +2,6 @@ package com.company.init;
 
 import com.company.details.Engine;
 import com.company.professions.Driver;
-import com.company.professions.Person;
 import com.company.vehicles.Car;
 import com.company.vehicles.Lorry;
 import com.company.vehicles.SportCar;
@@ -32,6 +31,8 @@ public class Main {
         car.turnRight();
 
         System.out.println(lorry.toString());
+        System.out.println(sportCar.toString());
+        System.out.println(car1.toString());
     }
 
 }
