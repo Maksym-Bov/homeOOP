@@ -47,19 +47,16 @@ public class Car implements iCar {
         this.weight = weight;
     }
 
-    @Override
+
     public void start(){
         System.out.println("Поехали");
     }
-    @Override
     public void stop(){
         System.out.println("Останавливаемся");
     }
-    @Override
     public void turnRight(){
         System.out.println("Поворот направо");
     }
-    @Override
     public void turnLeft(){ System.out.println("Поворот налево"); }
 
     public  String toString(){
