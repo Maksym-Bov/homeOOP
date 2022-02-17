@@ -3,7 +3,7 @@ package company.com.cheif.vegetables;
 import company.com.cheif.vegetables.characteristic.VegetablesCalories;
 import company.com.cheif.vegetables.characteristic.VegetablesName;
 
-public class Vegetables {
+public abstract class Vegetables {
 
     private VegetablesName name;
     private VegetablesCalories calories;
