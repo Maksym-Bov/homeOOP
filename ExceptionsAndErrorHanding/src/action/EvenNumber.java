@@ -7,11 +7,20 @@ public class EvenNumber {
  Проверять только целые числа.
  Добавить обработку ошибок с описанием
 * */
-    public   void determinesNumberEvenOrNotEven(){
+    public   void determinesNumberEvenOrNotEven() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number, please");
-        int number = scanner.nextInt();
-        String response =   (number % 2 == 0) ? "Even" : "Not even";
-        System.out.println(response);
+        String response = null;
+        try {
+            int number = scanner.nextInt();
+            response = (number % 2 == 0) ? "Even" : "Not even";
+            System.out.println(response);
+        } catch (Exception exception) {
+            System.out.println("Error, need enter number");
+            exception.printStackTrace();
+        } finally {
+            System.out.println(response);
+        }
+
     }
 }

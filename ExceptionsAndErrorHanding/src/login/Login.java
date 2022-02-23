@@ -13,16 +13,14 @@ public   void  login(String nameDB, String passwordDB ){
         String passwordLogin;
         String nameLogin;
         boolean checkNamePassword = false;
+        try{
         do  {
-            try {
                 System.out.println("Enter your name: ");
                 nameLogin = scanner.next();
                 System.out.println("Enter your password: ");
                 passwordLogin = scanner.next();
                 lengthPasswordLogin = passwordLogin.length();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
+
             if (lengthPassword < lengthPasswordLogin){
 
                 System.out.println("Error length password");
@@ -47,7 +45,9 @@ public   void  login(String nameDB, String passwordDB ){
                 }
             }
 
-        } while (lengthPassword < lengthPasswordLogin || checkNamePassword);
+        } while (lengthPassword < lengthPasswordLogin || checkNamePassword);}catch (Exception exception){
+            exception.printStackTrace();
+        }
 
     }
 }
